@@ -44,7 +44,7 @@ const Card = styled.div`
         width: 300px;
     }
 
-    border: 0.1px solid #306ee8;
+    border: 0.1px solid #04921bff;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
     `;
 
@@ -102,7 +102,7 @@ const Description = styled.div`
     width: 100%;
     font-size: 12px;
     font-weight: 400;
-    color: ${({ theme }) => theme.primary + 99};
+    color: ${({ theme }) => theme.primary };
     margin-bottom: 10px;
 
     @media (max-width: 768px){
@@ -122,7 +122,7 @@ const Sapn = styled.span`
 const Grade = styled.div`
     font-size: 14px;
     font-weight: 400px;
-    color: ${({ theme }) => theme.text_secondary + 80};
+    color: ${({ theme }) => theme.text_secondary };
 
     @media (max-width: 768px) {
         font-size: 12px;

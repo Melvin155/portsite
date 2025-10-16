@@ -67,6 +67,7 @@ const TimelineSection = styled.div`
     align-items: center;
     justify-content: center;
     gap: 12px;
+    
 `;
 
 const Education = () => {
@@ -83,10 +84,10 @@ const Education = () => {
                                     <EducationCard education={education} />
                                 </TimelineContent>
                                 <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="secondary"/>
+                                    <TimelineDot variant="outlined" sx={{ borderColor: "green" }}/>
                                     {index !== education.length - 1 && (
                                         
-                                        <TimelineConnector style={{ background: "#854CE6" }} />
+                                        <TimelineConnector style={{ background: "#bdbdbd" }} />
                                     )}
                                 </TimelineSeparator>
 
