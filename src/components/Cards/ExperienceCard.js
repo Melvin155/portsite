@@ -2,19 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const Document = styled.img`
-    display: none;
-    height: 70px;
-    width: fit-content;
-    background-color: #000;
-    border-radius: 10px;
-    
-    &:hover {
-        cursor: pointer;
-        opacity: 0.8;
-    }
-`;
-
 const Card = styled.div`
     width: 650px;
     border-radius: 10px;
@@ -31,10 +18,6 @@ const Card = styled.div`
     &:hover {
         box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
         transform: translateY(-5px);
-    }
-    
-    &:hover ${Document} {
-        display: flex;
     }
 
 
@@ -167,11 +150,7 @@ const ExperienceCard = ({ experience }) => {
                         </>
     )}
             </Description>
-            {experience.doc &&
-                <a href={experience.doc} target="new">
-                    <Document src={experience.doc} />
-                </a>
-            }
+           
       </Card>
     );
 }

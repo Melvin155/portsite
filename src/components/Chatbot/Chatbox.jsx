@@ -22,7 +22,7 @@ function Chatbot() {
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const [isOpen, setIsOpen] = useState(true); // 👈 control visibility
+  const [isOpen, setIsOpen] = useState(true); 
 
   const toggleChat = () => {
     setIsOpen((prev) => !prev);

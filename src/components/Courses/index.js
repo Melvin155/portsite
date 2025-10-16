@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Coursecard from "../Cards/Coursecard";
 import { courses } from "../../data/constants";
 
-// Responsive card wrapper (Grid handles width)
 const Card = styled.div`
   width: 100%; /* Grid handles the width */
 `;
@@ -118,7 +117,6 @@ const CardContainer = styled.div`
 const Courses = () => {
   const [toggle, setToggle] = useState("all");
 
-  // Helper to render toggle buttons
   const renderToggleButton = (value, label) => (
     <>
       <ToggleButton
@@ -132,7 +130,6 @@ const Courses = () => {
     </>
   );
 
-  // Filter courses based on toggle
   const filteredCourses =
     toggle === "all"
       ? courses
